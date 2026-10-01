@@ -1,0 +1,12 @@
+server:
+    port: 8888
+spring:
+    application:
+        name: config-server
+    cloud:
+        config:
+            server:
+                git:
+                    default-label: main
+                    uri: https://github.com/tungchien2k6/Session07-Ex01-DevOps.git
+                    clone-on-start: true
